@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text>-anoNascimento: int
+-nome: String
+-peso: double
+-altura: double
+--
++Pessoa (anoNascimento: int)
++setNome(nome: String): boolean
++getNome(): String
++setPeso(peso: double): boolean
++getPeso(): double
++setAltura(altura: double): boolean
++getAltura(): double
+</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>140</y>
+      <w>230</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Pessoa
+--
+-anoNascimento: int
+-nome: String
+-peso: double
+-altura: double
+-conjuge: Pessoa
+--
++Pessoa (anoNascimento: int)
++setNome(nome: String): boolean
++getNome(): String
++setPeso(peso: double): boolean
++getPeso(): double
++setAltura(altura: double): boolean
++getAltura(): double
++casar(outraPessoa: Pessoa): void
++ehCasado(): boolean
++getNomeConjuge(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>500</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_jose: Pessoa_
+--
+anoNascimento = 1985
+nome = "José"
+peso = 80,0
+altura = 1,85</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>510</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_maria: Pessoa_
+--
+anoNascimento = 1990
+nome = "Maria"
+peso = 60,5
+altura = 1,75</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

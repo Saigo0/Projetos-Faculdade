@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>340</y>
+      <w>400</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>ContaBanco
+--
++numConta: String
+#tipo: String
+-dono: String
+-saldo: double
+-status: boolean
+--
++ContaBanco()
++abrirConta(): boolean
++fecharConta(): boolean
++depositar(deposito: double): boolean
++sacar(saque: double): boolean
++pagarMensal(pgto: double): boolean
++getNumConta():String
++setNumConta(numConta: String): boolean
++getTipo(): String
++setTipo(tipo: String): boolean
++getDono(): String
++setDono(dono: String): boolean
++getSaldo(): double
++getStatus(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
