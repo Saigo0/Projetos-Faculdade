@@ -11,16 +11,16 @@
     </coordinates>
     <panel_attributes>ArrayInteiros
 --
--array: int[0..100]
+-array: int[0..*]
 --
 +ArrayInteiros(tamanho: int)
 +setValor(indice: int; valor: int): boolean
-+getArrayInteiros(): int[0..100]
++getArrayInteiros(): int[0..*]
 +toString(): String
 +existeValor(valor: int): boolean
 +maiorValor(): int
-+frequenciaAbsoluta(): int[0..100]
-+ordenaArray(): int[0..100]
++frequenciaAbsoluta(): int[0..*]
++ordenaArray(): int[0..*]
 </panel_attributes>
     <additional_attributes/>
   </element>
