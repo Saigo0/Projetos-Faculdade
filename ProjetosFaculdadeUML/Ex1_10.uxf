@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>170</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>ArrayInteiros
+--
+-array: int[0..*]
+--
++ArrayInteiros(tamanho: int)
++setValor(indice: int; valor: int): boolean
++getArrayInteiros(): int[0..*]
++toString(): String
++existeValor(valor: int): boolean
++maiorValor(): int
++frequenciaAbsoluta(): int[0..*]
++ordenaArray(): int[0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
