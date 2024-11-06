@@ -1,7 +1,5 @@
 package Ex1_5;
 
-import org.junit.Ignore;
-
 public class Pessoa {
     private int anoNascimento;
     private String nome;
