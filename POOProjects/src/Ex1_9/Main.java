@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         InteiroPositivo x = new InteiroPositivo();
 
-        x.setValor(10);
+        x.setValor(5);
         System.out.println(x.getValor());
         System.out.println(x.ehImpar());
         System.out.println(x.getFatorial());
