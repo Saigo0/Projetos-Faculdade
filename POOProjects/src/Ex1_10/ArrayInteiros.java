@@ -1,7 +1,7 @@
 package Ex1_10;
 
 public class ArrayInteiros {
-    private int [] array;
+    private final int [] array;
 
     public ArrayInteiros(int tamanho) {
         array = new int[tamanho];
