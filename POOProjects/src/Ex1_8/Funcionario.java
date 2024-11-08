@@ -82,7 +82,7 @@ public class Funcionario {
         return "Nome: " + this.getNome() +
                 ", dependentes: " + this.getDependentes() +
                 ", sal. hora: " + this.getSalHora() +
-                ", horas trab.: " + this.getHorasTrab() +
+                ", horas trab: " + this.getHorasTrab() +
                 ", sal. bruto: " + this.calcBruto() +
                 ", INSS: " + this.calcDescINSS() +
                 ", IR: " + this.calcDescIR() +
