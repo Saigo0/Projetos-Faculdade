@@ -12,7 +12,14 @@ public class Lutador {
     private int empates;
 
     public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates ) {
-
+        this.setNome(nome);
+        this.setNacionalidade(nacionalidade);
+        this.setIdade(idade);
+        this.setAltura(altura);
+        this.setPeso(peso);
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
     }
 
     public boolean setNome(String nome) {
@@ -141,14 +148,14 @@ public class Lutador {
         return  "CHEGOU A HORA! \n Apresentamos o lutador " + this.getNome() +
                 ", diretamente de " + this.getNacionalidade() +
                 ", com " + this.getIdade() +
-                ", " + this.getAltura() +
-                " e pesando " + this.getPeso() + "\n Ele vem com" + this.getVitorias() + " vitórias" +
+                "anos de idade, " + this.getAltura() +
+                " de altura e pesando " + this.getPeso() + "\n Ele vem com" + this.getVitorias() + " vitórias" +
                 ", " +this.getDerrotas()+ " derrotas " +
                 " e " + this.getEmpates() + "empates";
     }
 
     public String status(){
-        return  this.getNome() + " é um peso" + this.getCategoria() + "\n" +
+        return  this.getNome() + " é um peso " + this.getCategoria() + "\n" +
                 "Ganhou: " + this.getVitorias() + "\n" +
                 "Perdeu: " + this.getDerrotas() + "\n" +
                 "Empatou: " + this.getEmpates();
