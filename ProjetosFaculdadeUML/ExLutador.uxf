@@ -4,9 +4,9 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>180</x>
       <y>0</y>
-      <w>780</w>
+      <w>790</w>
       <h>550</h>
     </coordinates>
     <panel_attributes>Lutador
@@ -49,7 +49,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
+      <x>260</x>
       <y>590</y>
       <w>220</w>
       <h>180</h>
@@ -72,7 +72,7 @@ empates: 1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
+      <x>670</x>
       <y>590</y>
       <w>220</w>
       <h>180</h>
@@ -95,7 +95,7 @@ empates: 1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
+      <x>1030</x>
       <y>590</y>
       <w>220</w>
       <h>180</h>
@@ -118,7 +118,7 @@ empates: 2
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
+      <x>260</x>
       <y>830</y>
       <w>220</w>
       <h>180</h>
@@ -141,7 +141,7 @@ empates: 3
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
+      <x>670</x>
       <y>830</y>
       <w>220</w>
       <h>180</h>
@@ -164,7 +164,7 @@ empates: 4
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
+      <x>1030</x>
       <y>830</y>
       <w>220</w>
       <h>180</h>
@@ -187,10 +187,10 @@ empates: 3
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1340</x>
+      <x>1230</x>
       <y>20</y>
-      <w>190</w>
-      <h>140</h>
+      <w>310</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Luta
 --
@@ -199,22 +199,53 @@ empates: 3
 -rounds: int
 -aprovada: boolean
 --
-+marcarLuta()
-+lutar()</panel_attributes>
++setDesafiado(desafiado: Lutador): boolean
++getDesafiado(): Lutador
++setDesafiante(desafiante: Lutador): boolean
++getDesafiante(): Lutador
++marcarLuta(): String
++lutar(): String
++defineRounds(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
+      <x>960</x>
       <y>40</y>
-      <w>320</w>
+      <w>290</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 disputa &gt;
 m1=0..*
 m2=*</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>270.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1230</x>
+      <y>260</y>
+      <w>220</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Regras da luta:
+bg=red
+
+* Só pode ser marcada entre
+  lutadores da mesma categoria.
+  
+* Desafiado e desafiante devem
+  ser lutadores diferentes.
+  
+* Só pode acontecer se estiver
+  aprovada.
+  
+* Só pode ter como resultado a
+  vitória de um dos lutadores ou
+  o empate.
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
