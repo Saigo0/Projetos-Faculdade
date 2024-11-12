@@ -57,14 +57,16 @@ public class Luta {
             texto += this.desafiante.apresentar() + "\n";
             texto += this.desafiado.apresentar() + "\n";
             this.defineRounds();
+            texto += "A luta terá " + this.rounds + " rounds!\n";
             Random rand = new Random();
             int dtvence = 0;
             int ddvence = 0;
             int empate = 0;
+            int resultround = rand.nextInt(3);
             for (int i = 1; i <= this.rounds; i++){
-                int resultround = rand.nextInt(3);
                 switch (resultround){
                     case 0:
+                        empate ++;
                         texto += "Round: " + i + " " + ": empate!\n";
                         break;
 
@@ -83,10 +85,14 @@ public class Luta {
                 this.desafiante.ganharLuta();
                 this.desafiado.perderLuta();
                 texto += this.desafiante.getNome() + " ganhou a luta! \n";
-            } else {
+            } else if (ddvence > dtvence) {
                 this.desafiante.perderLuta();
                 this.desafiado.ganharLuta();
                 texto += this.desafiado.getNome() + " ganhou a luta! \n";
+            } else if (empate == resultround) {
+                this.desafiante.empatarLuta();
+                this.desafiado.empatarLuta();
+                texto += "A luta foi um empate completo!";
             }
             return texto;
         } else
