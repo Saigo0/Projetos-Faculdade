@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>0</y>
+      <w>790</w>
+      <h>550</h>
+    </coordinates>
+    <panel_attributes>Lutador
+--
+-nome: String
+-nacionalidade: String
+-idade: int
+-altura: double
+-peso: double
+-categoria: String
+-vitorias: int
+-derrotas: int
+-empates: int
+--
++Lutador(nome: String, nacionalidade: String, idade: int, altura: double, peso: double, vitorias: int, derrotas: int, empates: int)
++setNome(nome: String): boolean
++getNome(): String
++setNacionalidade(nac: String): boolean
++getNacionalidade(): String
++setIdade(idade: int): boolean
++getIdade(): int
++setAltura(altura: double): boolean
++getAltura(): double
+-setPeso(peso: int): boolean
++getPeso(): double
+-setCategoria(categ: String):boolean
++getCategoria(): String
++addVitorias(vitorias: int):boolean
++getVitorias(): int
++addDerrotas(derrotas: int): boolean
++getDerrotas(): int
++addEmpates(empates: int): boolean
++apresentar(): String
++status(): String
++ganharLuta(): boolean
++perderLuta(): boolean
++empatarLuta(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>590</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut1: Lutador_
+--
+nome: "Pretty Boy"
+nacionalidade: "França"
+idade: 31
+altura: 1.75
+peso: 68.9
+categoria: "Leve"
+vitorias; 11
+derrotas: 2
+empates: 1
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>590</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut2: Lutador_
+--
+nome: "Snapshadow"
+nacionalidade: "EUA"
+idade: 35
+altura: 1.65
+peso: 80.9
+categoria: "Médio"
+vitorias: 12
+derrotas: 2
+empates: 1
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1030</x>
+      <y>590</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut3: Lutador_
+--
+nome: "Dead Code"
+nacionalidade: "Austrália"
+idade: 28
+altura: 1.93
+peso: 81.6
+categoria: "Médio"
+vitorias: 13
+derrotas: 0
+empates: 2
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>830</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut4: Lutador_
+--
+nome: "Ufocobol"
+nacionalidade: "Brasil"
+idade: 37
+altura: 1.70
+peso: 119.3
+categoria: "Pesado"
+vitorias: 5
+derrotas: 4
+empates: 3
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>830</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut5: Lutador_
+--
+nome: "Nerdaard"
+nacionalidade: "EUA"
+idade: 30
+altura: 1.81
+peso: 105.7
+categoria: "Pesado"
+vitorias: 12
+derrotas: 2
+empates: 4
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1030</x>
+      <y>830</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>_lut6: Lutador_
+--
+nome: "Putscript"
+nacionalidade: "Brasil"
+idade: 29
+altura: 1.68
+peso: 57.8
+categoria: "Leve"
+vitorias: 14
+derrotas: 2
+empates: 3
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>20</y>
+      <w>310</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Luta
+--
+-desafiado: Lutador
+-desafiante: Lutador
+-rounds: int
+-aprovada: boolean
+--
++setDesafiado(desafiado: Lutador): boolean
++getDesafiado(): Lutador
++setDesafiante(desafiante: Lutador): boolean
++getDesafiante(): Lutador
++marcarLuta(): String
++lutar(): String
++defineRounds(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>40</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+disputa &gt;
+m1=0..*
+m2=*</panel_attributes>
+    <additional_attributes>270.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1230</x>
+      <y>260</y>
+      <w>220</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Regras da luta:
+bg=red
+
+* Só pode ser marcada entre
+  lutadores da mesma categoria.
+  
+* Desafiado e desafiante devem
+  ser lutadores diferentes.
+  
+* Só pode acontecer se estiver
+  aprovada.
+  
+* Só pode ter como resultado a
+  vitória de um dos lutadores ou
+  o empate.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
