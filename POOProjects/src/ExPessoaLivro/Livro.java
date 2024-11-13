@@ -91,7 +91,7 @@ public class Livro implements Publicacao {
                 "Autor: " + this.getAutor() + "\n" +
                 "Total de páginas: " + this.getTotPaginas() + "\n" +
                 "Página atual:" + this.getPagAtual() + "\n" +
-                "Leitor: " + this.getLeitor() + "\n" +
+                "Leitor: " + this.leitor.getNome() + "\n" +
                 "Aberto ou fechado: " + this.getAberto();
     }
 
@@ -107,16 +107,22 @@ public class Livro implements Publicacao {
 
     @Override
     public void avancarPag(){
-        this.setPagAtual(this.getPagAtual() + 1);
+        if (this.getPagAtual() < this.getTotPaginas() && this.getAberto()) {
+            this.setPagAtual(this.getPagAtual() + 1);
+        }
     }
 
     @Override
     public void voltarPag(){
-        this.setPagAtual(this.getPagAtual() - 1);
+        if(!(this.getPagAtual() == 0 && this.getAberto())){
+            this.setPagAtual(this.getPagAtual() - 1);
+        }
     }
 
     @Override
-    public void folhear(int pagina){
-
+    public void folhear(int pagina ){
+        if (pagina <= this.getTotPaginas() && this.getAberto()){
+            this.setPagAtual(pagina);
+        }
     }
 }
