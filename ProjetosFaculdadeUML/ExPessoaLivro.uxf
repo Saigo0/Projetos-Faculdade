@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>80</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Pessoa
+--
+-nome: String
+-idade: int
+-sexo: String
+--
++Pessoa(idade: int, nome: String, sexo: String)
++setNome(nome: String): boolean
++getNome(): String
++getIdade(): int
++setSexo(sexo: String): boolean
++getSexo(): String
++fazerAniver(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>80</y>
+      <w>410</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>Livro
+--
+-titulo: String
+-autor: String
+-totPaginas: int
+-pagAtual: int
+-aberto: boolean
+-leitor: Pessoa
+--
++Livro(titulo: String, autor: String, totPaginas: int, leitor: Pessoa)
+-setTitulo(titulo: String): boolean
++getTitulo():String
+-setAutor(autor: String):boolean
++getAutor(): String
++setTotPaginas(totPaginas: int): boolean
++getTotPaginas(): int
++setPagAtual(pagAtual: int): boolean
++getPagAtual(): int
++setLeitor(leitor: Pessoa): boolean
++getLeitor():String
+-setAberto(aberto: boolean): boolean
++getAberto(): boolean
++detalhes(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>70</y>
+      <w>490</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..*
+m2=1..1
+Lê &gt;</panel_attributes>
+    <additional_attributes>470.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>180</y>
+      <w>160</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Publicacao
+--
+--
++abrir(): void
++fechar(): void
++folhear(): void
++avancarPag(): void
++voltarPag(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>190</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+</diagram>
