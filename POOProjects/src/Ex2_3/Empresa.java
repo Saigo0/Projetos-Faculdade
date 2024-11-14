@@ -7,10 +7,10 @@ public class Empresa {
     private String razaoSocial;
     private ArrayList<Funcionario> funcionarios;
 
-    public Empresa(String cnpj, String razaoSocial, Funcionario funcionarios) {
+    public Empresa(String cnpj, String razaoSocial) {
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
-        this.funcionarios = new ArrayList<>(funcionarios);
+        this.funcionarios = new ArrayList<Funcionario>();
     }
 
     public void addFuncionarios(Funcionario funcionario){
