@@ -4,7 +4,7 @@ public class Carro extends Veiculo{
 
     private int portas;
 
-    public Carro(String modelo, int ano, String placa, double valor) {
+    public Carro(String modelo, int ano, String placa, double valor, int portas) {
         super(modelo, ano, placa, valor);
         this.setPortas(portas);
     }
@@ -23,7 +23,7 @@ public class Carro extends Veiculo{
 
     @Override
     public String toString() {
-        return  "Carro: " + super.toString() + "\n" +
+        return  "Carro: " + super.toString() +
                 "Portas: " + this.getPortas();
     }
 }

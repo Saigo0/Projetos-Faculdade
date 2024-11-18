@@ -1,9 +1,9 @@
 package Ex3_5;
 
-public class Moto extends Carro {
+public class Moto extends Veiculo {
     private int cilindradas;
 
-    public Moto (String modelo, int ano, String placa, double valor) {
+    public Moto (String modelo, int ano, String placa, double valor, int cilindradas) {
         super(modelo, ano, placa, valor);
         this.setCilindradas(cilindradas);
     }
@@ -21,6 +21,6 @@ public class Moto extends Carro {
     }
 
     public String toString() {
-        return "Moto: \n" + super.toString() + "\n Cilindradas: " + this.cilindradas;
+        return "Moto: \n" + super.toString() + "Cilindradas: " + this.cilindradas;
     }
 }
