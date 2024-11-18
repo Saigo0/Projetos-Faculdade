@@ -28,9 +28,9 @@ public class Empresa {
     public String imprimeFuncionarios(){
         String texto = "";
         for (int i = 0; i < this.funcionarios.size(); i++) {
-            texto += this.funcionarios.get(i).getNome() + "\n";
-            texto += this.funcionarios.get(i).getSalario() + "\n";
-            texto += this.funcionarios.get(i).getMatricula() + "\n";
+            texto +=  "Nome: " + this.funcionarios.get(i).getNome() + "\n";
+            texto +=  "Salário: " + this.funcionarios.get(i).getSalario() + "\n";
+            texto +=  "Matrícula: " + this.funcionarios.get(i).getMatricula() + "\n";
         }
         return texto;
     }
