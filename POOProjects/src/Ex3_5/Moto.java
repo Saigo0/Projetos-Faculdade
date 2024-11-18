@@ -5,7 +5,7 @@ public class Moto extends Carro {
 
     public Moto (String modelo, int ano, String placa, double valor) {
         super(modelo, ano, placa, valor);
-        setCilindradas(cilindradas);
+        this.setCilindradas(cilindradas);
     }
 
     public int getCilindradas() {

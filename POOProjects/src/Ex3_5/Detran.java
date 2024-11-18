@@ -6,6 +6,11 @@ public class Detran {
     private String estado;
     private ArrayList<Veiculo> veiculos;
 
+    public Detran(String estado) {
+        this.setEstado(estado);
+        this.veiculos = new ArrayList<Veiculo>();
+    }
+
     public void addVeiculo(Veiculo v){
         this.veiculos.add(v);
     }
@@ -31,6 +36,10 @@ public class Detran {
     }
 
     public String toString() {
-        return "";
+        String texto = "Estado: " + this.getEstado() + "\n";
+        for (Veiculo v : this.veiculos) {
+            texto += v.toString() + "\n";
+        }
+        return texto;
     }
 }

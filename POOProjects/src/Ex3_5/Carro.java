@@ -6,7 +6,7 @@ public class Carro extends Veiculo{
 
     public Carro(String modelo, int ano, String placa, double valor) {
         super(modelo, ano, placa, valor);
-        setPortas(portas);
+        this.setPortas(portas);
     }
 
     public int getPortas() {
