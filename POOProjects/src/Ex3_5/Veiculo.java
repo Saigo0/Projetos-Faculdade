@@ -64,6 +64,6 @@ public class Veiculo {
         return  "Modelo: " + this.getModelo() + "\n" +
                 "Ano: " + this.getAno() + "\n" +
                 "Placa: " + this.getPlaca() + "\n" +
-                "Valor: " + this.getValor() + "\n";
+                "Valor: " + String.format("%.2f",this.getValor()) + "\n";
     }
 }
