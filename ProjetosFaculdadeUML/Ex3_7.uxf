@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>210</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Portal
+--
+-nome: String
+-url: String
+--
++Portal(nome: String, url: String)
++toString(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>210</y>
+      <w>300</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Anuncio
+--
+-produto: String
+-valorVenda: double
+-cidade: String
+-estado: String
+--
++getProduto(): String
++setProduto(produto: String): boolean
++getValorVenda(): double
++setValorVenda(valorVenda: double): boolean
++getCidade(): String
++setCidade(cidade: String): boolean
++getEstado(): String
++setEstado(estado: String): boolean
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>220</y>
+      <w>300</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 0..*
+registra &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>990</x>
+      <y>580</y>
+      <w>260</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>AnuncioPago
+--
+-dias: int
+-valPago: double
+--
++getDias(): int
++setDias(dias: int): boolean
++getValPago(): double
++setValPago(valPago: double): boolean
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1110</x>
+      <y>450</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>
