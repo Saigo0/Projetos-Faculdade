@@ -20,6 +20,14 @@ public class Moto extends Veiculo {
             return false;
     }
 
+    @Override
+    public double calcIPVA(){
+        if(this.cilindradas <= 200){
+            return 0;
+        } else
+            return super.calcIPVA();
+    }
+
     public String toString() {
         return "Moto: \n" + super.toString() + "Cilindradas: " + this.cilindradas;
     }

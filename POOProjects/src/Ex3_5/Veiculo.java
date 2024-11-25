@@ -60,10 +60,15 @@ public class Veiculo {
             return false;
     }
 
+    public double calcIPVA(){
+        return this.valor * 0.02;
+    }
+
     public String toString() {
         return  "Modelo: " + this.getModelo() + "\n" +
                 "Ano: " + this.getAno() + "\n" +
                 "Placa: " + this.getPlaca() + "\n" +
-                "Valor: " + String.format("%.2f",this.getValor()) + "\n";
+                "Valor: " + String.format("%.2f",this.getValor()) + "\n" +
+                "IPVA: " + this.calcIPVA();
     }
 }
