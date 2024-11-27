@@ -62,5 +62,4 @@ public class Portal {
         return texto;
     }
 
-
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>180</y>
+      <w>360</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Treinador
+--
+-cpf: String
+-nome: String
+-salMensal: double
+--
++Treinador(cpf: String, nome: String, salMnesal: double)
++getCpf(): String
+-setCpf(cpf: String): boolean
++getNome(): String
+-setNome(nome: String): boolean
++getSalMensal(): double
++setSalMensal(salMensal: double): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>180</y>
+      <w>350</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Time
+--
+-nome: String
+-anoFund: int
+-cidadeSede: String
+-
++Time(nome: String, anoFund: int, cidadeSede: String)
++getNome(): String
+-setNome(nome: String): boolean
++getAnoFund(): int
+-setAnoFund(anoFund: int): boolean
++getCidadeSede(): String
+-setCidadeSede(cidadeSede: String): boolean
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>220</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=1..1
+gerencia &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
+  </element>
+</diagram>
