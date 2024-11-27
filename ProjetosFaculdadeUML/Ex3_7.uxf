@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="15.1">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
+      <x>400</x>
       <y>210</y>
       <w>290</w>
-      <h>110</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>Portal
 --
@@ -15,6 +15,8 @@
 -url: String
 --
 +Portal(nome: String, url: String)
++getNome(): String
++setNome(nome: String): boolean
 +toString(): String
 </panel_attributes>
     <additional_attributes/>
@@ -48,15 +50,15 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
+      <x>680</x>
       <y>220</y>
-      <w>300</w>
+      <w>320</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 0..*
 registra &gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
