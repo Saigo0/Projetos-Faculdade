@@ -7,7 +7,7 @@
       <x>690</x>
       <y>140</y>
       <w>370</w>
-      <h>170</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Livro
 --
@@ -16,8 +16,11 @@
 -paginas: int
 --
 +Livro(titulo: String, ano: int, paginas: int)
+-setTitulo(titulo: String): boolean
 +getTitulo(): String
+-setAno(ano: int): boolean
 +getAno(): int
+-setPaginas(int paginas): boolean
 +getPaginas(): int
 +toString(): String</panel_attributes>
     <additional_attributes/>
@@ -27,8 +30,8 @@
     <coordinates>
       <x>1150</x>
       <y>140</y>
-      <w>320</w>
-      <h>140</h>
+      <w>330</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Autor
 --
@@ -36,6 +39,7 @@
 -pseudonimo: String
 --
 +Autor(nome: String)
+-setNome(nome: String): boolean
 +getNome(): String
 +setPseudonimo(pseudonimo: String): boolean
 +getPseudonimo(): String</panel_attributes>
@@ -47,7 +51,7 @@
       <x>350</x>
       <y>140</y>
       <w>280</w>
-      <h>120</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Editora
 --
@@ -55,7 +59,9 @@
 -cidade: String
 --
 +Editora(nome: String, cidade: String)
+-setNome(nome: String): boolean
 +getNome(): String
+-setCidade(cidade: String): boolean
 +getCidade(): String</panel_attributes>
     <additional_attributes/>
   </element>
@@ -63,26 +69,254 @@
     <id>Relation</id>
     <coordinates>
       <x>430</x>
-      <y>250</y>
+      <y>280</y>
       <w>350</w>
-      <h>180</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 &lt; lançado por </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;160.0;330.0;160.0;330.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;330.0;130.0;330.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>950</x>
-      <y>270</y>
+      <y>280</y>
       <w>490</w>
-      <h>160</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-
 m2=1..*
 escrito por &gt;</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;140.0;450.0;140.0;450.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;130.0;450.0;130.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>630</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_ciaLetras: Editora_
+--
+nome = "Cia das Letras"
+cidade = "São Paulo"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>750</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_bookman: Editora_
+--
+nome = "Bookman"
+cidade = "Porto Alegre"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>540</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_livroMarcha: Livro_
+--
+nome = "A longa marcha"
+ano = 1979
+paginas = 236</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>670</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_livroJava: Livro_
+--
+titulo: "Java: como programar"
+ano = 2017
+paginas = 934</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>790</y>
+      <w>240</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_livroAndroid: Livro_
+--
+titulo: "Android para programadores"
+ano = 2016
+paginas = 422</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>520</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_stephen: Autor_
+--
+nome = "Stephen King"
+pseudonimo = "Richard Bachman"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>620</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_paul: Autor_
+--
+nome: = "Paul Deitel"
+pseudonimo = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>710</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_harvey: Autor_
+--
+nome: = "Harvey Deitel"
+pseudonimo = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>810</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_harvey: Autor_
+--
+nome: = "Alexander Wald"
+pseudonimo = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>540</y>
+      <w>230</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>650</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>710</y>
+      <w>230</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>670</y>
+      <w>220</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;150.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>750</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;80.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>830</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>570</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;100.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>700</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;80.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>780</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;50.0</additional_attributes>
   </element>
 </diagram>
