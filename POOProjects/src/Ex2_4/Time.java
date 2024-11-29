@@ -57,11 +57,11 @@ public class Time {
     }
 
     public String toString() {
-        return  "DADOS DO TIME: \n" +
+        return  "\nDADOS DO TIME: \n" +
                 "Nome: " + this.getNome() + "\n" +
                 "Ano de fundação: " + this.getAnoFund() + "\n" +
                 "Cidade Sede: " + this.getCidadeSede() + "\n" +
-                "\n DADOS DO TREINADOR: \n" +
+                "\nDADOS DO TREINADOR: \n" +
                 "Treinador: " + this.getTreinador().getNome() + "\n" +
                 "CPF: " + this.getTreinador().getCpf() + "\n" +
                 "Salário mensal: " + this.getTreinador().getSalMensal();

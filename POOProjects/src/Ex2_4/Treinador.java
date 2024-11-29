@@ -47,5 +47,12 @@ public class Treinador {
             return false;
     }
 
+    public String toString() {
+        return  "Nome: " + this.getNome() + "\n" +
+                "CPF: " + this.getCpf() + "\n" +
+                "Salário mensal: " + this.getSalMensal() + "\n";
+
+    }
+
 }
 
