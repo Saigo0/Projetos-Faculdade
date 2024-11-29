@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>140</y>
+      <w>370</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Livro
+--
+-titulo: String
+-ano: int
+-paginas: int
+--
++Livro(titulo: String, ano: int, paginas: int)
++getTitulo(): String
++getAno(): int
++getPaginas(): int
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>140</y>
+      <w>320</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Autor
+--
+-nome: String
+-pseudonimo: String
+--
++Autor(nome: String)
++getNome(): String
++setPseudonimo(pseudonimo: String): boolean
++getPseudonimo(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>140</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Editora
+--
+-nome: String
+-cidade: String
+--
++Editora(nome: String, cidade: String)
++getNome(): String
++getCidade(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>250</y>
+      <w>350</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+&lt; lançado por </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0;330.0;160.0;330.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>270</y>
+      <w>490</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1..*
+escrito por &gt;</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;140.0;450.0;140.0;450.0;10.0</additional_attributes>
+  </element>
+</diagram>
