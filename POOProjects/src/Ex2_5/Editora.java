@@ -5,7 +5,8 @@ public class Editora {
     private String cidade;
 
     public Editora(String nome, String cidade) {
-
+        this.setNome(nome);
+        this.setCidade(cidade);
     }
 
     private boolean setNome(String nome) {

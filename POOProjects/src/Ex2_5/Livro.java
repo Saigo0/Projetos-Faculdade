@@ -13,7 +13,7 @@ public class Livro {
         this.setTitulo(titulo);
         this.setAno(ano);
         this.setPaginas(paginas);
-        ArrayList<Autor> autores = new ArrayList();
+        this.autores = new ArrayList<Autor>();
     }
 
     private boolean setTitulo (String titulo) {
@@ -49,13 +49,30 @@ public class Livro {
     }
 
     public int getPaginas() {
+
         return this.paginas;
+    }
+
+    public ArrayList<Autor> getAutor(){
+        return this.autores;
+    }
+
+    public void addEditora(Editora editora){
+        this.editora = editora;
+    }
+
+    public void removeAutor (Autor autor) {
+        this.autores.remove(autor);
+    }
+
+    public void addAutor (Autor autor) {
+        this.autores.add(autor);
     }
 
     public String getNomeAutores () {
         String nomeAutores = "";
         for (Autor autor : this.autores) {
-            nomeAutores += autor.getNome() + "(" + autor.getPseudonimo() + ")" + ", ";
+            nomeAutores += autor.getNome() + " (" + autor.getPseudonimo() + ")" + ", ";
         }
         return nomeAutores;
     }
@@ -70,8 +87,8 @@ public class Livro {
 
     public String toString() {
         return "Título: " + this.getTitulo() + "\n" +
-               "Autor(es)" + this.getNomeAutores() + "\n" +
-               "Editora" + this.getNomeEditora();
+               "Autor(es): " + this.getNomeAutores() + "\n" +
+               "Editora: " + this.getNomeEditora() + "\n";
 
     }
 

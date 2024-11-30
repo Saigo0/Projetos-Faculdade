@@ -1,1 +1,1 @@
-Create the test class for Ex2_3, Ex1_5, Ex2_4, 3_7, ExLutador and ExPessoaLivro
+Create the test class for Ex2_3, Ex1_5, Ex2_4, Ex2_5, 3_7, ExLutador and ExPessoaLivro

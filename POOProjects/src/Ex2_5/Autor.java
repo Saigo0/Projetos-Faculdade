@@ -10,7 +10,7 @@ public class Autor {
     }
 
     private boolean setNome(String nome) {
-        if(!nome.isBlank()){
+        if(!nome.isEmpty()){
             this.nome = nome;
             return true;
         } else
@@ -21,12 +21,8 @@ public class Autor {
         return this.nome;
     }
 
-    public boolean setPseudonimo(String pseudonimo) {
-        if(!pseudonimo.isBlank()){
-            this.pseudonimo = pseudonimo;
-            return true;
-        } else
-            return false;
+    public void setPseudonimo(String pseudonimo) {
+        this.pseudonimo = pseudonimo;
     }
 
     public String getPseudonimo() {
