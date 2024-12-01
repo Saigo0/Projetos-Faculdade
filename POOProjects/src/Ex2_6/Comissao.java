@@ -68,7 +68,7 @@ public class Comissao {
         for(Deputado deputado : this.deputados){
             texto += deputado.getNome() + ", ";
         }
-        return texto;
+        return "\nDeputados da " + this.getTitulo() + ": " + texto;
     }
 
     public String printDepEstado(String estado){
@@ -78,7 +78,7 @@ public class Comissao {
                 texto += deputado.getNome() + ", ";
             }
         }
-        return texto;
+        return "\nDeputados do estado de " + estado +  " na comissão " + this.getTitulo() + ": " + texto;
     }
 
     public String printDepPartido(int partido){
@@ -88,7 +88,7 @@ public class Comissao {
                 texto += deputado.getNome() + ", ";
             }
         }
-        return texto;
+        return "Deputados do partido " + partido +  " na comissão " + this.getTitulo() + ": " + texto;
     }
 
 }
