@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>8</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1240</x>
-      <y>112</y>
-      <w>240</w>
-      <h>192</h>
+      <x>1160</x>
+      <y>70</y>
+      <w>300</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>Comissao
 --
@@ -29,10 +29,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>96</y>
-      <w>360</w>
-      <h>200</h>
+      <x>460</x>
+      <y>50</y>
+      <w>450</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>Deputado
 --
@@ -54,10 +54,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1072</x>
-      <y>568</y>
-      <w>168</w>
-      <h>80</h>
+      <x>950</x>
+      <y>640</y>
+      <w>210</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>_dep1: Deputado_
 --
@@ -70,10 +70,10 @@ estado = "SC"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
-      <y>152</y>
-      <w>224</w>
-      <h>40</h>
+      <x>900</x>
+      <y>120</y>
+      <w>280</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1..*
@@ -83,10 +83,10 @@ faz parte &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>688</x>
-      <y>432</y>
-      <w>168</w>
-      <h>80</h>
+      <x>470</x>
+      <y>470</y>
+      <w>210</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>_dep2: Deputado_
 --
@@ -99,10 +99,10 @@ estado = "RS"</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1264</x>
-      <y>568</y>
-      <w>168</w>
-      <h>80</h>
+      <x>1190</x>
+      <y>640</y>
+      <w>210</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>_dep3: Deputado_
 --
@@ -115,10 +115,10 @@ estado = "SP"</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>592</y>
-      <w>168</w>
-      <h>80</h>
+      <x>550</x>
+      <y>670</y>
+      <w>210</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>_dep4: Deputado_
 --
@@ -131,10 +131,10 @@ estado = "RS"</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>456</x>
-      <y>640</y>
-      <w>168</w>
-      <h>80</h>
+      <x>180</x>
+      <y>730</y>
+      <w>210</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>_dep5: Deputado_
 --
@@ -147,10 +147,10 @@ estado = "SC"</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1072</x>
-      <y>440</y>
-      <w>168</w>
-      <h>40</h>
+      <x>950</x>
+      <y>480</y>
+      <w>210</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>_com1: Comissao_
 --
@@ -160,10 +160,10 @@ titulo: "Comissao de Educação"</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>344</x>
-      <y>464</y>
-      <w>224</w>
-      <h>40</h>
+      <x>40</x>
+      <y>510</y>
+      <w>280</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>_com2: Comissao_
 --
@@ -173,10 +173,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1152</x>
-      <y>472</y>
-      <w>40</w>
-      <h>112</h>
+      <x>1050</x>
+      <y>520</y>
+      <w>50</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>30.0;120.0;10.0;10.0</additional_attributes>
@@ -184,10 +184,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1152</x>
-      <y>472</y>
-      <w>200</w>
-      <h>112</h>
+      <x>1050</x>
+      <y>520</y>
+      <w>250</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>230.0;120.0;10.0;10.0</additional_attributes>
@@ -195,10 +195,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>912</x>
-      <y>440</y>
-      <w>176</w>
-      <h>208</h>
+      <x>750</x>
+      <y>480</y>
+      <w>220</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;240.0;200.0;10.0</additional_attributes>
@@ -206,10 +206,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>464</y>
-      <w>144</w>
-      <h>40</h>
+      <x>310</x>
+      <y>510</y>
+      <w>180</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;30.0;160.0;10.0</additional_attributes>
@@ -217,10 +217,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>496</y>
-      <w>240</w>
-      <h>160</h>
+      <x>270</x>
+      <y>550</y>
+      <w>300</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>280.0;180.0;10.0;10.0</additional_attributes>
@@ -228,10 +228,10 @@ titulo: "Comissao de Constituição e Justiça"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>496</y>
-      <w>56</w>
-      <h>160</h>
+      <x>210</x>
+      <y>550</y>
+      <w>70</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>50.0;180.0;10.0;10.0</additional_attributes>
