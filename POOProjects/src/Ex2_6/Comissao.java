@@ -43,24 +43,52 @@ public class Comissao {
         return texto;
     }
 
-    public ArrayList<Deputado> getDepPartido(String partido){
-
+    public ArrayList<Deputado> getDepPartido(int partido){
+        ArrayList<Deputado> deps = new ArrayList<>();
+        for(Deputado deputado : this.deputados){
+            if(deputado.getNPartido() == partido){
+                deps.add(deputado);
+            }
+        }
+        return deps;
     }
 
     public ArrayList<Deputado> getDepEstado(String estado){
-
+        ArrayList<Deputado> deps = new ArrayList<>();
+        for(Deputado deputado : this.deputados){
+            if(deputado.getEstado().equals(estado)){
+                deps.add(deputado);
+            }
+        }
+        return deps;
     }
 
-    public String printDeps(){
-
+    public String printDep(){
+        String texto = "";
+        for(Deputado deputado : this.deputados){
+            texto += deputado.getNome() + ", ";
+        }
+        return texto;
     }
 
     public String printDepEstado(String estado){
-
+        String texto = "";
+        for(Deputado deputado : this.deputados){
+            if(deputado.getEstado().equals(estado)){
+                texto += deputado.getNome() + ", ";
+            }
+        }
+        return texto;
     }
 
-    public String printDepPartido(){
-
+    public String printDepPartido(int partido){
+        String texto = "";
+        for(Deputado deputado : this.deputados){
+            if(deputado.getNPartido() == partido){
+                texto += deputado.getNome() + ", ";
+            }
+        }
+        return texto;
     }
 
 }

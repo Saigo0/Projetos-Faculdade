@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>112</y>
+      <w>240</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Comissao
+--
+-titulo: String
+--
++Comissao(titulo: String)
++getTitulo(): String
+-setTitulo(titulo: String): boolean
++addDeputado(deputado: Deputado): void
++removeDeputado(deputado: Deputado)
++getDeputados(): Deputado
++getDepPartido(partido: int): Deputado
++getDepEstado(estado: String): Deputado
++printDep(): String
++printDepPartido(partido: int): String
++printDepEstado(estado: String): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>96</y>
+      <w>360</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Deputado
+--
+-matricula: int
+-nome: String
+-partido: int
+-estado: String
+--
++Deputado(matricula: int, nome: String, partido: String, estado: String)
+-setMatricula(matricula: int): boolean
++getMatricula(): int
+-setNome(nome: String): boolean
++getNome(): String
++setPartido(partido: int): boolean
++getPartido(): int
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1072</x>
+      <y>568</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_dep1: Deputado_
+--
+nome = "João"
+matricula = 1234
+partido = 99
+estado = "SC"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>152</y>
+      <w>224</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1..*
+faz parte &gt;</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>432</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_dep2: Deputado_
+--
+nome = "Maria"
+matricula = 5678
+partido = 98
+estado = "RS"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>568</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_dep3: Deputado_
+--
+nome = "José"
+matricula = 9012
+partido = 99
+estado = "SP"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>592</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_dep4: Deputado_
+--
+nome = "Pedro"
+matricula = 3456
+partido = 91
+estado = "RS"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>640</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_dep5: Deputado_
+--
+nome = "Ana"
+matricula = 7890
+partido = 91
+estado = "SC"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1072</x>
+      <y>440</y>
+      <w>168</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_com1: Comissao_
+--
+titulo: "Comissao de Educação"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>344</x>
+      <y>464</y>
+      <w>224</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_com2: Comissao_
+--
+titulo: "Comissao de Constituição e Justiça"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1152</x>
+      <y>472</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1152</x>
+      <y>472</y>
+      <w>200</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>230.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>440</y>
+      <w>176</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;240.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>464</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;30.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>496</y>
+      <w>240</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>280.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>496</y>
+      <w>56</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>50.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
