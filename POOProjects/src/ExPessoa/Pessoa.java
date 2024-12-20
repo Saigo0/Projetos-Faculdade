@@ -47,8 +47,9 @@ public class Pessoa {
             return false;
     }
 
-    public void fazerAniv(){
+    public final boolean fazerAniv(){
         this.setIdade(this.getIdade() + 1);
+        return true;
     }
 
     public String toString(){

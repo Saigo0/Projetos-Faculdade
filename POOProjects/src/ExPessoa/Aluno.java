@@ -39,6 +39,10 @@ public class Aluno extends Pessoa {
         return this.matr;
     }
 
+    public String pagarMensalidade(){
+        return "Mensalidadade paga!";
+    }
+
     public String toString() {
         return super.toString() + "\nMatr: " + this.getMatr() + "\nCurso: " + this.getCurso() + "\n";
     }
