@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>70</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Animal
+--
+-peso: double
+-idade: int
+-membros: String
+--
+/+locomover(): String/
+/+alimentar(): String/
+/+emitirSom(): String/
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>340</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Mamifero
+--
+-corPelo: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>340</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Réptil
+--
+-corEscama: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>340</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Peixe
+--
+-corEscama: String
+--
++soltarBolha(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>340</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Ave 
+--
+-corPena: String
+--
++fazerNinho(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
