@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>70</y>
-      <w>150</w>
-      <h>150</h>
+      <x>786</x>
+      <y>36</y>
+      <w>198</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>&lt;&lt;abstract&gt;&gt;
 Animal
@@ -16,6 +16,14 @@ Animal
 -idade: int
 -membros: String
 --
++Animal(peso: double, idade: int, membros: String)
++setPeso(peso: double): boolean
++getPeso(): double
++setIdade(idade: int): boolean
++getIdade(): int
++setMembros(membros: String): boolean
++getMembros(): String
++toString(): String
 /+locomover(): String/
 /+alimentar(): String/
 /+emitirSom(): String/
@@ -26,58 +34,274 @@ Animal
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>340</y>
-      <w>110</w>
-      <h>50</h>
+      <x>306</x>
+      <y>282</y>
+      <w>270</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Mamifero
 --
--corPelo: String</panel_attributes>
+-corPelo: String
+--
++Mamifero(peso: double, idade: int, membros: String, corPelo: String)
++setCorPelo(corPelo: String): boolean
++getCorPelo(): String
++toString(): String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>340</y>
-      <w>130</w>
-      <h>50</h>
+      <x>588</x>
+      <y>282</y>
+      <w>276</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Réptil
 --
 -corEscama: String
-</panel_attributes>
+--
++Reptil(peso: double, idade: int, membros: String, corEscama: String)
++setCorEscama(corEscama: String): boolean
++getCorEscama(): String
++toString(): String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
-      <y>340</y>
-      <w>140</w>
-      <h>70</h>
+      <x>876</x>
+      <y>282</y>
+      <w>330</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Peixe
 --
 -corEscama: String
 --
-+soltarBolha(): String</panel_attributes>
++Peixe(peso: double, idade: int, membros: String, corEscama: String)
++setCorEscama(corEscama: String): boolean
++getCorEscama(): String
++soltarBolha(): String
++toString(): String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>340</y>
-      <w>140</w>
-      <h>70</h>
+      <x>1218</x>
+      <y>282</y>
+      <w>252</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Ave 
 --
 -corPena: String
 --
-+fazerNinho(): String</panel_attributes>
++Ave(peso: double, idade: int, membros: String, corPena: String)
++setCorPena(corPena: String): boolean
++getCorPena(): String
++fazerNinho(): String
++toString(): String</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>516</y>
+      <w>264</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Canguru
+--
+--
++Canguru(peso: double, idade: int, membros: String, corPelo: String)
++usarBolsa(): String
++locomover(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>534</y>
+      <w>264</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Cachorro
+--
+--
++Cachorro(peso: double, idade: int, membros: String, corPelo: String)
++enterrarOsso(): String
++abanarRabo(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>432</y>
+      <w>270</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Cobra
+--
+--
++Cobra(peso: double, idade: int, membros: String, corEscama: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>726</x>
+      <y>426</y>
+      <w>282</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Tartaruga
+--
+--
++Tartaruga(peso: double, idade: int, membros: String, corEscama: String)
++locomover(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>486</y>
+      <w>276</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Goldfish
+--
+--
++Goldfish(peso: double, idade: int, membros: String, corEscama: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1194</x>
+      <y>414</y>
+      <w>258</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Arara
+--
+--
++Arara(peso: double, idade: int, membros: String, corPena: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>246</x>
+      <y>360</y>
+      <w>150</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>360</y>
+      <w>36</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>582</x>
+      <y>360</y>
+      <w>120</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>708</x>
+      <y>360</y>
+      <w>174</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>360</y>
+      <w>174</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>360</y>
+      <w>18</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>906</x>
+      <y>198</y>
+      <w>114</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>198</y>
+      <w>312</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;500.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>198</y>
+      <w>480</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>780.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>618</x>
+      <y>198</y>
+      <w>234</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>370.0;10.0;10.0;140.0</additional_attributes>
   </element>
 </diagram>
