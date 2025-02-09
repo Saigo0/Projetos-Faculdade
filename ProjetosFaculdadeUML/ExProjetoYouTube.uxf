@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
-      <y>310</y>
+      <x>570</x>
+      <y>270</y>
       <w>130</w>
       <h>110</h>
     </coordinates>
@@ -21,8 +21,8 @@ AcoesVideo
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>300</y>
+      <x>810</x>
+      <y>260</y>
       <w>140</w>
       <h>120</h>
     </coordinates>
@@ -39,8 +39,8 @@ AcoesVideo
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
-      <y>520</y>
+      <x>560</x>
+      <y>480</y>
       <w>160</w>
       <h>120</h>
     </coordinates>
@@ -56,8 +56,8 @@ AcoesVideo
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>410</y>
+      <x>630</x>
+      <y>370</y>
       <w>30</w>
       <h>130</h>
     </coordinates>
@@ -67,8 +67,8 @@ AcoesVideo
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>520</y>
+      <x>810</x>
+      <y>480</y>
       <w>130</w>
       <h>90</h>
     </coordinates>
@@ -83,8 +83,8 @@ AcoesVideo
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
-      <y>410</y>
+      <x>870</x>
+      <y>370</y>
       <w>30</w>
       <h>130</h>
     </coordinates>
