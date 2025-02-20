@@ -10,10 +10,10 @@ public class Video implements AcoesVideo {
 
     public Video(String titulo){
         this.titulo = titulo;
-        this.views = 0;
-        this.avaliacao = 1;
-        this.curtidas = 0;
-        this.reproduzindo = false;
+        this.setViews(0);
+        this.setAvaliacao(1);
+        this.setCurtidas(0);
+        this.setReproduzindo(false);
     }
 
     public String getTitulo() {
@@ -69,5 +69,10 @@ public class Video implements AcoesVideo {
     @Override
     public void like() {
         this.setCurtidas(this.getCurtidas() + 1);
+    }
+
+    public String toString(){
+        return "Vídeo {" + "título = " + this.getTitulo() + ", avaliação = " + this.getAvaliacao() + ", curtidas = " +
+                this.getCurtidas() + ", views =" + this.getViews() + ", reproduzindo = " + this.isReproduzindo() + '}';
     }
 }
