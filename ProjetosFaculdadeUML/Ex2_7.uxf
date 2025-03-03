@@ -6,20 +6,24 @@
     <coordinates>
       <x>1120</x>
       <y>140</y>
-      <w>260</w>
-      <h>230</h>
+      <w>280</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>Banco
 --
 -nome: String
 -cod: int
+-agencias: &lt;Agencia&gt;
 --
++Banco(nome)
 +setNome(nome: String): boolean
 +getNome(): String
 +getCod(): int
 +getAgencias(): Agencia
 +getAgencias(ano: int): Agencia
 +getAgencias(city: String): Agencia
++addAgencia(agencia: Agencia): void
++removeAgencia(agencia: Agencia): void
 +ImprimeAgencias(): String
 +ImprimeAgencias(): String
 +ImprimeAgencias(): String
