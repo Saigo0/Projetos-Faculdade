@@ -1,18 +1,20 @@
 package Ex2_7;
 
 public class Agencia {
-    private static int num;
+    private static int num = 0;
+    private int numero;
     private String city;
     private int opYear;
 
     public Agencia(String city, int opYear) {
         setCity(city);
         setOpYear(opYear);
-        num++;
+        this.numero = Agencia.num++;
     }
 
+
     public int getNum() {
-        return this.num;
+        return this.numero;
     }
 
     public int getOpYear() {
@@ -41,6 +43,6 @@ public class Agencia {
     }
 
     public String toString() {
-        return "Agencia [número = " + this.getNum() + ", cidade = " + this.getCity() + ", ano de abertura = " + this.getOpYear() + "]";
+        return "Agencia [número = " + this.getNum() + ", cidade = " + this.getCity() + ", ano de abertura = " + this.getOpYear() + "]\n";
     }
 }

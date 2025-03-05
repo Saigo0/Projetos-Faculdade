@@ -5,10 +5,12 @@ import java.util.ArrayList;
 public class Banco {
     private String nome;
     private int cod;
+    private static int num = 0;
     private ArrayList<Agencia> agencias;
 
     public Banco(String nome) {
         setNome(nome);
+        this.cod = Banco.num++;
         this.agencias = new ArrayList<Agencia>();
     }
 
@@ -63,8 +65,8 @@ public class Banco {
     public String ImprimeAgencias() {
         String texto = "";
         for(Agencia ag : this.agencias){
-            texto += "Agência " + ag + ag.toString();
+            texto += ag + ag.toString();
         }
-        return "Banco: " + this.getNome() + "\n" + texto;
+        return "Banco: " + this.getNome() + "\n" + texto + "\n";
     }
 }
