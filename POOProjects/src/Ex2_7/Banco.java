@@ -65,7 +65,7 @@ public class Banco {
     public String ImprimeAgencias() {
         String texto = "";
         for(Agencia ag : this.agencias){
-            texto += ag + ag.toString();
+            texto += ag.toString();
         }
         return "Banco: " + this.getNome() + "\n" + texto + "\n";
     }
