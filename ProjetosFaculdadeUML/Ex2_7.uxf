@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
+      <x>1110</x>
       <y>140</y>
       <w>280</w>
       <h>300</h>
@@ -15,7 +15,7 @@
 -cod: int
 -agencias: &lt;Agencia&gt;
 --
-+Banco(nome)
++Banco(nome: String)
 +setNome(nome: String): boolean
 +getNome(): String
 +getCod(): int
@@ -25,18 +25,18 @@
 +addAgencia(agencia: Agencia): void
 +removeAgencia(agencia: Agencia): void
 +ImprimeAgencias(): String
-+ImprimeAgencias(): String
-+ImprimeAgencias(): String
++ImprimeAgencias(city: String): String
++ImprimeAgencias(ano: itn): String
 +RetornaAgencia(num: int): Agencia </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
+      <x>410</x>
       <y>170</y>
-      <w>220</w>
-      <h>170</h>
+      <w>230</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>Agencia
 --
@@ -44,11 +44,13 @@
 -city: String
 -opYear: int 
 --
++Agencia(city: String, opYear: int)
 +getNum(): int
 -setCity(city: String): boolean
 +getCity(): String
 -setOpYear(opYear: int): boolean
-+getOpYear(): int</panel_attributes>
++getOpYear(): int
++toString(): String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -56,11 +58,11 @@
     <coordinates>
       <x>630</x>
       <y>210</y>
-      <w>510</w>
+      <w>500</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 pertence a &gt;</panel_attributes>
-    <additional_attributes>490.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
