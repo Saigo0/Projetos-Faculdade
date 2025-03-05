@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>90</y>
+      <w>340</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Clube
+--
+-nome: String
+-cidade: String
+--
++Clube(nome: String, cidade: String)
++getSociosMenoresDeIdade(): ArrayList&lt;Socio&gt;
++getIdadeMediaSocios(): double
++getSociosIdadeMaiorQueMedia(): ArrayList&lt;Socio&gt;
++getArrecadacaoMensalidades(): double
++removerSocio(matricula: int): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>110</y>
+      <w>470</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Socio
+--
+-matricula: int
+-nome: String
+-idade: int
+-valorMensalidade: double
+--
++Socio(matricula: int, nome: String, idade: int, valorMensalidade: double)
++setIdade(idade: int): boolean
++setValorMensalidade(valorMensalidade: double): boolean
++getMatricula(): int
++getNome(): String
++getIdade(): int
++getValorMensalidade(): double
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>250</y>
+      <w>430</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+possui &gt;
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;410.0;70.0</additional_attributes>
+  </element>
+</diagram>
