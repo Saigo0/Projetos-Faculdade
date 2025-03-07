@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>90</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+AcoesVideo
+--
+--
+/+play()/
+/+pause()/
+/+like()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>80</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/Pessoa/
+--
+#nome: String
+#idade: int
+#sexo: String
+#experiencia: double
+--
+/#ganharExp()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>300</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Video
+--
+-titulo: String
+-avaliacao: int
+-views: int
+-curtidas: int
+-reproduzindo: boolean
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>180</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>310</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Gafanhoto
+--
+-login: String
+-totAssistido: int
+--
++viuMaisUm()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>190</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>500</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Visualizacao
+--
+-espectador: Gafanhoto
+-filme: Video
+--
++avaliar(): void
++avaliar(nota): void
++avaliar(porc): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

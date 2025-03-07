@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>140</y>
+      <w>280</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Banco
+--
+-nome: String
+-cod: int
+-agencias: &lt;Agencia&gt;
+--
++Banco(nome: String)
++setNome(nome: String): boolean
++getNome(): String
++getCod(): int
++getAgencias(): Agencia
++getAgencias(ano: int): Agencia
++getAgencias(city: String): Agencia
++addAgencia(agencia: Agencia): void
++removeAgencia(agencia: Agencia): void
++ImprimeAgencias(): String
++ImprimeAgencias(city: String): String
++ImprimeAgencias(ano: itn): String
++RetornaAgencia(num: int): Agencia </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>170</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Agencia
+--
+-num: int
+-city: String
+-opYear: int 
+--
++Agencia(city: String, opYear: int)
++getNum(): int
+-setCity(city: String): boolean
++getCity(): String
+-setOpYear(opYear: int): boolean
++getOpYear(): int
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>210</y>
+      <w>500</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+pertence a &gt;</panel_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
